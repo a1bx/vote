@@ -5,7 +5,7 @@ function Login (){
   return (
     <section className="h-screen">
       <div className="container h-full w-full px-6 py-24 bg-slate-200">
-        <h1 className="text-bold text-lg">Register to be able to Vote</h1>
+        <h1 className="text-bold text-lg">Register and Vote</h1>
         <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
           {/* <!-- Left column container with background--> */}
           <div className="mb-12 md:mb-0 md:w-8/12 lg:w-1/2">
