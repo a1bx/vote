@@ -6,12 +6,12 @@ import LandingPage from './components/landingpage';
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes> */}
-      <Login></Login>
+      </Routes>
+      {/* <Login></Login> */}
       {/* <LandingPage></LandingPage>
       <Signup></Signup> */}
     </div>

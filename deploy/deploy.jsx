@@ -2,7 +2,7 @@ async function main() {
     const Voting = await ethers.getContractFactory("Voting");
   
  
-    const Voting_ = await Voting.deploy(["Joanne", "Sydney", "Annamaria", "Soul","Sameera"], 90);
+    const Voting_ = await Voting.deploy(["Joanne", "Sydney", "Annamaria", "Soul", "Sameera"], 120);
     console.log("Contract address:", Voting_.address);
   
   

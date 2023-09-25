@@ -14,7 +14,7 @@ contract Voting {
     uint256 public votingStart;
     uint256 public votingEnd;
 
-constructor (string[] memory _candidateNames, uint256 _durationInMinutes) {
+ constructor (string[] memory _candidateNames, uint256 _durationInMinutes) {
     for (uint256 i = 0; i < _candidateNames.length; i++) {
         candidates.push(Candidate({
             name: _candidateNames[i],
@@ -39,7 +39,7 @@ constructor (string[] memory _candidateNames, uint256 _durationInMinutes) {
     }
 
     function vote(uint256 _candidateIndex) public {
-        require(!voters[msg.sender], "You have already voted.");
+        require(!voters[msg.sender], "You have already voted.Thank you");
         require(_candidateIndex < candidates.length, "Invalid candidate index.");
 
         candidates[_candidateIndex].voteCount++;
