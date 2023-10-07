@@ -1,7 +1,12 @@
 import React from 'react'
 import Avatar from '../assets/avatar.svg'
+import { Navigate } from 'react-router-dom'
 
 const signup = () => {
+  const handlelogin = () => {
+    Navigate('/signup')
+  }
+  
   return (
     <div className="min-h-screen bg-gray flex flex-col justify-center">
       <div className="m-auto">
@@ -45,6 +50,7 @@ const signup = () => {
           <p className='text-center mb-4'>Already have an account? <ul className='text-red'>login</ul></p>
           <div className="flex items-center justify-between">
             <button
+            onClick={handlelogin}
               className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
               type="button"
             >
