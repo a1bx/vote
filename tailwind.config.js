@@ -9,8 +9,8 @@ module.exports = {
         white: '#FFFFFF',
         red:'#FF0000'
       },
-      backgroundImage:{
-        'hero-pattern': "url('/src/assets/votechain.svg')",
+      fontFamily: {
+        'sans': ['Baloo Da 2', 'sans-serif'],
       },
       colors: {
         'primary': '#1E3A8A',
