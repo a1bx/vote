@@ -26,7 +26,7 @@ const login = () => {
               placeholder="*********"
             />
           </div>
-          <p className='text-red text-center mb-4'>forgot password?</p>
+          <p className='text-red mb-4'>forgot password?</p>
           <div className="flex items-center justify-between">
             <button
               className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
