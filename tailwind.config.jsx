@@ -5,8 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        white: '#FFFFFF',
+        red:'#FF0000'
+      },
       backgroundImage:{
-        'hero-pattern': "url('/src/assets/images/hero-pattern.svg')",
+        'hero-pattern': "url('/src/assets/votechain.svg')",
       },
       colors: {
         'primary': '#1E3A8A',
