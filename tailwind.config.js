@@ -4,11 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    colors: {
+      'white': '#FFFFFF',
+      'red':'#FF000080',
+      'gray':'#EEEEEE'
+    },
     extend: {
-      colors: {
-        white: '#FFFFFF',
-        red:'#FF0000'
-      },
       fontFamily: {
         'sans': ['Baloo Da 2', 'sans-serif'],
       },
