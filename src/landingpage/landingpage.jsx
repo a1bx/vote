@@ -1,23 +1,35 @@
-import React from 'react';
+import React from 'react'
+import Avatar1 from '../assets/welcomepage.svg' 
 
-function LandingPage (){
+const login = () => {
+  const handlestart = () => {
+    window.location.href = '/login'
+  }
   return (
-    <div className="bg-cover bg-center h-screen bg-image">
-      <div className="flex items-center justify-center h-full">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-white mb-8">Welcome to votechain make choices here</h1>
-          <div className="space-x-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full shadow-md">
-              Login
-            </button>
-            <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded-full shadow-md">
-              Sign Up
+    <div className="min-h-screen bg-gray flex flex-col justify-center">
+      <div className="m-auto">
+ 
+        <form className="bg-gray  ">
+        {/* <img src= {Avatar1} alt="Login" className="mb-4 ml-4" /> */}
+        <img src= {Avatar1} alt="Login" className="mb-4 ml-4" />
+        <h1 className='font-bold mt-2 text-center'>Votechain</h1>
+        <p className='text-center mb-4 mt-4'>Welcome to Votechain! to proceed here </p>
+           
+         
+          <div className="flex items-center justify-between">
+          <link to="/login" />
+            <button
+            onClick={handlestart}
+              className="mt-5 justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Get started
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LandingPage;
+export default login
