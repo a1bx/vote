@@ -10,7 +10,6 @@ const signup = () => {
   return (
     <div className="min-h-screen bg-gray flex flex-col justify-center">
       <div className="m-auto">
- 
         <form className="bg-gray  ">
         <img src= {Avatar} alt="Login" className="mb-4 ml-4" />
         <h1 className='font-bold mt-2 text-center'>Login</h1>
